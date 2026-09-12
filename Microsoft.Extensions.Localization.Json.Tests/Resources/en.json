@@ -1,0 +1,12 @@
+{
+  "hello": "Hello",
+  "greet": "Hello {0}",
+  "shared": "Shared english",
+  "form": {
+    "title": "Form",
+    "fields": [ "First", "Second" ]
+  },
+  "count": 3,
+  "enabled": true,
+  "missingValue": null
+}

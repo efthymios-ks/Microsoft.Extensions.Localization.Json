@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>Microsoft.Extensions.Localization.Json.Tests</RootNamespace>
+		<AssemblyName>Microsoft.Extensions.Localization.Json.Tests</AssemblyName>
+		<IsPackable>false</IsPackable>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\**\*.json" WithCulture="false" />
+		<EmbeddedResource Include="Resources.json" WithCulture="false" />
+		<EmbeddedResource Include="Widgets\*.json" WithCulture="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="xunit" />
+		<PackageReference Include="xunit.runner.visualstudio" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Microsoft.Extensions.Localization.Json\Localization.Json.csproj" />
+	</ItemGroup>
+</Project>
